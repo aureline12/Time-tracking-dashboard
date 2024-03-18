@@ -1,0 +1,43 @@
+.firstCard {
+  border-radius: 15px !important;
+  background-color: var(--dark-blue);
+}
+
+.cardHeader {
+  border-radius: 15px !important;
+  position: relative;
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 20%;
+  }
+}
+
+.secondCard {
+  background-color: var(--dark-blue);
+  border-radius: 15px !important;
+  position: absolute;
+  top: 50px;
+}
+
+.secondCard:hover {
+  background-color: hsl(235, 46%, 37%);
+  cursor: pointer;
+}
+
+.time {
+  font-size: 30px;
+}
+
+.description {
+  color: hsl(0, 0%, 75%);
+}
+
+.timeandDescription {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
